@@ -1,0 +1,57 @@
+<template>
+	<view class="tab-bar">
+		<view class="tab-item" v-for="(item,index) in this.props.list" :key="index">
+			<image class="tab-icon" :src="item.icon" />
+			<text class="tab-text">{{ item.msg}}</text>
+		</view>
+	</view>
+</template>
+<script>
+export default {
+	name: 'tab-bar',
+	props: {
+		list: {
+			type: Array,
+			default: function () {
+				return []
+			}
+		}
+	},
+	apiready() {//like created
+
+	},
+	data() {
+		return {
+
+		}
+	},
+	methods: {
+
+	}
+}
+</script>
+<style scoped>
+.tab-bar {
+	flex-direction: row;
+	justify-content: space-between;
+	padding: 3px 0;
+	width: 100%;
+	height: 60px;
+	background-color: #fff;
+	border-top: 1px solid #ccc;
+}
+.tab-item {
+	width: 33%;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+}
+.tab-text {
+	font-size: 11px;
+	color: #666;
+}
+.tab-icon {
+	width: 25px !important;
+	height: 25px;
+}
+</style>

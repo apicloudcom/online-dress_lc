@@ -1,0 +1,102 @@
+<template>
+	<scroll-view class="scroll_right" scroll-y>
+		<view class="right_box">
+			<view @click="onItemClick" class="right_item" style={'width:'+itemWidth+'px;height:'+(itemWidth+40)+'px;'}
+				v-for="(item,index) in list" data-id={item.id} data-name={item.name}>
+				<image class="right_item_img" style={'height:'+itemWidth+'px;'} src={item.icon}></image>
+				<text class="right_item_zi color_12">{item.name}</text>
+			</view>
+		</view>
+	</scroll-view>
+</template>
+<script>
+export default {
+	name: 'hoc-side-content-od',
+	props: {
+		list: {
+			type: Array,
+			default: function () {
+				return []
+			}
+		}
+	},
+	apiready() {//like created
+
+	},
+	data() {
+		return {
+			list:this.props.list || [
+					{
+					  "id": "258389c0-d532-11ea-9b7c-8f1336202828",
+					  "name": "拼接",
+					  "icon": "http://aea8bc2ccdd582de43c1.qiniucdn.apicloud-system.com/apicloud/e97719cccadec54316651e1f9448d822.png"
+					},
+					{
+					  "id": "11cca860-d2ff-11ea-a0bc-bd616acc739c",
+					  "name": "纽扣",
+					  "icon": "http://aea8bc2ccdd582de43c1.qiniucdn.apicloud-system.com/apicloud/814e4300a24e866e414d0463478d45f8.png"
+					},
+					{
+					  "id": "07bbe7f0-d2ff-11ea-a0bc-bd616acc739c",
+					  "name": "系带",
+					  "icon": "http://aea8bc2ccdd582de43c1.qiniucdn.apicloud-system.com/apicloud/5e2416a4f651a814f3f7ac3ea2b91f5a.png"
+					},
+					{
+					  "id": "f97b6080-d2fe-11ea-a0bc-bd616acc739c",
+					  "name": "拉链",
+					  "icon": "http://aea8bc2ccdd582de43c1.qiniucdn.apicloud-system.com/apicloud/17ee821cd6da02caf05c96ee001888d1.png"
+					},
+					{
+					  "id": "42990ef0-ccb7-11ea-8ee1-07d7d7fa197c",
+					  "name": "荷叶边",
+					  "icon": "http://aea8bc2ccdd582de43c1.qiniucdn.apicloud-system.com/apicloud/c78dce71fde2cdba0dade8845b6bcb4a.png"
+					}
+				  ]
+		}
+	},
+	computed: {
+		itemWidth() {
+			return Math.floor((api.winWidth - 80 - 60 - 30) / 3);
+		}
+	},
+	methods: {
+		onItemClick(){
+			api.openWin({
+				name: 'detail',
+				url:'widget://pages/detail/detail'
+			})
+		}
+	}
+}
+</script>
+<style scoped>
+.scroll_right {
+	flex: 1;
+}
+
+.right_box {
+	flex-direction: row;
+	flex-wrap: wrap;
+	margin: 15px;
+	padding: 15px 0 0 15px;
+	background-color: white;
+	border-radius: 8px;
+}
+
+.right_item {
+	margin-right: 15px;
+}
+
+.right_item_img {
+	width: 100%;
+	background-color: #f6f6f6;
+}
+
+.right_item_zi {
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	color: #8f8f8f;
+	font-size: 14px;
+}
+</style>

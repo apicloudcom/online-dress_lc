@@ -1,0 +1,26 @@
+<template>
+    <view class="page">
+        <safe-area></safe-area>
+        <hoc-order-tab-od />
+        <hoc-order-list-od />
+    </view>
+</template>
+<script>
+import '../../components/hoc-order-tab-od.stml';
+import '../../components/hoc-order-list-od.stml';
+export default {
+    name: 'order_list',
+    apiready() { //like created
+    },
+    data() {
+        return {};
+    },
+    methods: {}
+};
+</script>
+<style>
+.page {
+    height: 100%;
+    background-color: #f8f8f8;
+}
+</style>

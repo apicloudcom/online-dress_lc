@@ -1,0 +1,100 @@
+<template name='tpl'>
+    <view class="page">
+        <!-- 顶部导航 -->
+        <hoc-nav-bar-od msg='首页' />
+        <scroll-view scroll-y>
+            <!-- 搜索 -->
+            <hoc-search-bar-od :placeholder='placeholder' />
+            <!-- banner -->
+            <hoc-banner-list-od :list='bannerList' />
+            <!-- 分类列表 -->
+            <hoc-sort-list-od :list='sortList' />
+            <!-- 商品列表纵向 -->
+            <hoc-good-list-lt-od :list='goodsList' :title="title" />
+            <!-- 商品列表横向 -->
+            <hoc-good-list-gr-od :list='goodsList' :title="title" />
+        </scroll-view>
+    </view>
+</template>
+<script>
+import '../../components/hoc-nav-bar-od.stml';
+import '../../components/hoc-search-bar-od.stml';
+import '../../components/hoc-banner-list-od.stml';
+import '../../components/hoc-sort-list-od.stml';
+import '../../components/hoc-good-list-lt-od.stml';
+import '../../components/hoc-good-list-gr-od.stml';
+export default {
+    data() {
+        return {
+            placeholder: "请输入商品名称",
+            // 轮播图
+            bannerList: [{
+                "icon": "http://aea8bc2ccdd582de43c1.qiniucdn.apicloud-system.com/apicloud/c93cb651077d11a80e83c7bbc41ab3c8.png"
+            }, {
+                "icon": "http://aea8bc2ccdd582de43c1.qiniucdn.apicloud-system.com/apicloud/74f3bc9acdac7fc7554869f7011848df.png"
+            }, {
+                "icon": "http://aea8bc2ccdd582de43c1.qiniucdn.apicloud-system.com/apicloud/1d4e6036e2742d1500dfa7c6b0d65e84.png"
+            }],
+            // 分类列表
+            sortList: [{
+                "id": "f4aaeef0-caf6-11ea-8523-0da8a6a49497",
+                "name": "连衣裙",
+                "icon": "http://aea8bc2ccdd582de43c1.qiniucdn.apicloud-system.com/apicloud/fb2fd84add6d8abdfe419b6171f3058f.png"
+            }, {
+                "id": "fc084f30-caf6-11ea-8523-0da8a6a49497",
+                "name": "衬衫",
+                "icon": "http://aea8bc2ccdd582de43c1.qiniucdn.apicloud-system.com/apicloud/e8623d0eb02bd7ad54af16b5780ea62a.png"
+            }, {
+                "id": "1ff38f90-caf7-11ea-8523-0da8a6a49497",
+                "name": "半身裙",
+                "icon": "http://aea8bc2ccdd582de43c1.qiniucdn.apicloud-system.com/apicloud/15988601ef5f857e970992f5040eeb66.png"
+            }, {
+                "id": "418835c0-caf7-11ea-8523-0da8a6a49497",
+                "name": "吊带裙",
+                "icon": "http://aea8bc2ccdd582de43c1.qiniucdn.apicloud-system.com/apicloud/c8f30ce70fb18c0632bf820f79f8c596.png"
+            }],
+            // 商品列表标题
+            title: "活动专区",
+            // 商品列表
+            goodsList: [{
+                id: "1",
+                title: "莫代尔无袖吊带连衣裙春秋侧开叉长裙女夏季内搭修身显瘦打底裙子",
+                image: "http://aea8bc2ccdd582de43c1.qiniucdn.apicloud-system.com/apicloud/af44dcca9cde25d42f56f3047bfe0249.png",
+                price: 699,
+                buy_num: 233,
+                delprice: 1299
+            }, {
+                id: "2",
+                title: "夏新款套装女洋气时尚短裤阔腿裤两件套小个子夏装搭配显高",
+                image: "http://aea8bc2ccdd582de43c1.qiniucdn.apicloud-system.com/apicloud/46e4b8d7a4a8d1febeec082516a8e8f5.png",
+                price: 629,
+                buy_num: 666,
+                delprice: 1236
+            }, {
+                id: "3",
+                title: "2020夏新款韩版连衣裙女收腰显瘦显高A字裙气质法式",
+                image: "http://aea8bc2ccdd582de43c1.qiniucdn.apicloud-system.com/apicloud/05a8c2eda3a3e7f24b809d37064a702b.jpg",
+                price: 1299,
+                buy_num: 200,
+                delprice: 2199
+            }, {
+                id: "4",
+                title: "港风套装女复古chic减龄短袖 ins复古穿搭",
+                image: "http://aea8bc2ccdd582de43c1.qiniucdn.apicloud-system.com/apicloud/55503f6038070b5e7bcd663df8e9c61a.jpg",
+                price: 1998,
+                buy_num: 1234,
+                delprice: 2666
+            }]
+        };
+    }
+};
+</script>
+<style>
+.page {
+    /* height: 100%; */
+    background-color: white;
+}
+scroll-view {
+    height: 100%;
+}
+</style>

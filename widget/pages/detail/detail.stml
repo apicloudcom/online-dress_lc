@@ -1,0 +1,73 @@
+<template>
+	<view class="page">
+		<!-- 顶部导航 -->
+		<hoc-nav-bar-od msg='商品详情' isBack />
+		<scroll-view scroll-y="true">
+			<!-- 轮播图 -->
+			<hoc-detail-banner-od :list='bannerList' />
+			<!-- 商品信息 -->
+			<hoc-detail-info-od :data='datailInfo' />
+			<!-- 规格 -->
+			<hoc-detail-size-od size='S' />
+			<!-- 商品详情 -->
+			<hoc-detail-good-od
+				html_detail='<p><img style=\"max-width:450px;\" src=\"https://img.alicdn.com/imgextra/i1/2647621085/O1CN01NyvAmy1JsyJmYJVrU_!!2647621085.jpg\" /></p>\n<p><img style=\"max-width:450px;\" src=\"https://img.alicdn.com/imgextra/i2/2647621085/O1CN016Bwwo91JsyE6YvQMj_!!2647621085.jpg\" /></p>\n<p><img style=\"max-width:450px;\" src=\"https://img.alicdn.com/imgextra/i3/2647621085/O1CN013XtO4D1JsyE5ISJhd_!!2647621085.jpg\" /></p>' />
+		</scroll-view>
+		<!-- 底部按钮 -->
+		<hoc-detail-footer-od  :data="footerData" />
+	</view>
+</template>
+<script>
+import '../../components/hoc-nav-bar-od.stml'
+import '../../components/hoc-detail-banner-od.stml'
+import '../../components/hoc-detail-info-od.stml'
+import '../../components/hoc-detail-size-od.stml'
+import '../../components/hoc-detail-good-od.stml'
+import '../../components/hoc-detail-footer-od.stml'
+
+export default {
+	name: 'detail',
+	apiready() {//like created
+
+	},
+	data() {
+		return {
+			// 轮播图
+			bannerList: [
+				"http://aea8bc2ccdd582de43c1.qiniucdn.apicloud-system.com/apicloud/91de607738427759b82c231cc7417725.png",
+				"http://aea8bc2ccdd582de43c1.qiniucdn.apicloud-system.com/apicloud/cdd745ebab4d463b6dc5e2656e6cf84d.png",
+				"http://aea8bc2ccdd582de43c1.qiniucdn.apicloud-system.com/apicloud/02e1b158a350a622fd1132b2f09fc4e4.png"
+			],
+			// 商品详情
+			datailInfo: {
+				title: "莫代尔无袖吊带连衣裙春秋侧开叉长裙女夏季内搭修身显瘦打底裙子",
+				price: 699,
+				yunfei_type: "none",
+				buy_num: 233,
+				delprice: 1299,
+				yunfei_money: 0
+			},
+			footerData: {
+				floor_text_left: '分享',
+				floor_text_right: '购物车',
+				floor_icon_left: 'http://ae8b3ee28597856d3283.qiniucdn.apicloud-system.com/apicloud/bb9b74c67da3eb1de2b75b90feb75680.png',
+				floor_icon_right: 'http://ae8b3ee28597856d3283.qiniucdn.apicloud-system.com/apicloud/a19dc37a54accb3f849db181ba512b32.png',
+				floor_btn_left: '加入购物车',
+				floor_btn_right: '立即购买'
+			}
+		}
+	},
+	methods: {
+
+	}
+}
+</script>
+<style>
+.page {
+	height: 100%;
+	background-color: #f8f8f8;
+}
+scroll-view {
+	flex: 1;
+}
+</style>

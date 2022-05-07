@@ -1,0 +1,34 @@
+<template>
+    <view class="page">
+        <!-- <safe-area></safe-area> -->
+        <hoc-nav-bar-od msg="分类" />
+        <view class="sort">
+            <hoc-side-bar-od />
+            <hoc-side-content-od />
+        </view>
+    </view>
+</template>
+<script>
+import '../../components/hoc-nav-bar-od.stml';
+import '../../components/hoc-side-bar-od.stml';
+import '../../components/hoc-side-content-od.stml';
+export default {
+    name: 'sort',
+    apiready() { //like created
+    },
+    data() {
+        return {};
+    },
+    methods: {}
+};
+</script>
+<style>
+.page {
+    height: 100%;
+    background-color: #fff;
+}
+.sort {
+    flex: 1;
+    flex-direction: row;
+}
+</style>
