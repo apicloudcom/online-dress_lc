@@ -48,7 +48,10 @@ export default {
 		onShoppingClick(){
 			api.openWin({
 				name: 'shopping_cart',
-				url:'widget://pages/shopping_cart/shopping_cart'
+				url:'widget://pages/shopping_cart/shopping_cart',
+				pageParam: {
+					isSkip: true
+				}
 			})
 		},
 		onshare() {

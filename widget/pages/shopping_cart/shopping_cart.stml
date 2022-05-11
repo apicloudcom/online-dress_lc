@@ -1,7 +1,7 @@
 <template>
     <view class="page">
         <!-- 顶部导航 -->
-        <hoc-nav-bar-od msg="购物车" />
+        <hoc-nav-bar-od msg="购物车" :isBack="isBack" />
         <!-- 顶部title -->
         <hoc-shopping-header-od />
         <!-- 购物车列表 -->
@@ -20,7 +20,9 @@ export default {
     apiready() { //like created
     },
     data() {
-        return {};
+        return {
+            isBack: api.pageParam.isSkip == true ? true : false
+        };
     },
     methods: {}
 };

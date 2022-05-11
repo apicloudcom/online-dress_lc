@@ -1,7 +1,7 @@
 <template>
     <view class="page">
         <!-- <safe-area></safe-area> -->
-        <hoc-nav-bar-od msg="分类" />
+        <hoc-nav-bar-od msg="分类" isBack={false} />
         <view class="sort">
             <hoc-side-bar-od />
             <hoc-side-content-od />

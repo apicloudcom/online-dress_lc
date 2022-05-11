@@ -1,11 +1,12 @@
 <template>
-    <view class="page">
-        <safe-area></safe-area>
+    <safe-area class="page">
+        <hoc-nav-bar-od msg='我的订单' isBack />
         <hoc-order-tab-od />
         <hoc-order-list-od />
-    </view>
+    </safe-area>
 </template>
 <script>
+import '../../components/hoc-nav-bar-od.stml';
 import '../../components/hoc-order-tab-od.stml';
 import '../../components/hoc-order-list-od.stml';
 export default {
