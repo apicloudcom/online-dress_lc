@@ -1,7 +1,7 @@
 <template>
     <view class="page">
         <!-- 顶部导航 -->
-        <hoc-nav-bar-od msg="购物车" isBack />
+        <hoc-nav-bar-od msg="购物车" />
         <!-- 顶部title -->
         <hoc-shopping-header-od />
         <!-- 购物车列表 -->
@@ -16,7 +16,7 @@ import '../../components/hoc-shopping-header-od.stml';
 import '../../components/hoc-shopping-list-od.stml';
 import '../../components/hoc-shopping-footer-od.stml';
 export default {
-    name: 'shopping_cart',
+    name: 'cart',
     apiready() { //like created
     },
     data() {

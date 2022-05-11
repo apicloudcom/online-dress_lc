@@ -17,7 +17,7 @@
         "title": "分类"
       }, {
         "name": "page3",
-        "url": "pages/shopping_cart/shopping_cart.stml",
+        "url": "pages/cart/cart.stml",
         "title": "购物车"
       }, {
         "name": "page4",
