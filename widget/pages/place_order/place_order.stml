@@ -43,12 +43,12 @@ export default {
             },
             // 商品信息
             goodData: [{
-                "title": "夏新款套装女洋气时尚短裤阔腿裤两件套小个子夏装搭配显高",
-                "image": "http://aea8bc2ccdd582de43c1.qiniucdn.apicloud-system.com/apicloud/46e4b8d7a4a8d1febeec082516a8e8f5.png",
-                "price": 629,
+                "title": "夏新款套装女洋气时尚短裤阔腿裤",
+                "image": "http://ae8b3ee28597856d3283.qiniucdn.apicloud-system.com/apicloud/3ee90482ef5b13bdbd9e9dc3f79f495e.png",
+                "price": 699,
                 "ku_num": 995,
                 "delprice": 1236,
-                "key": "M",
+                "key": "白色/S码",
                 "buynum": 1
             }],
             // 下单信息

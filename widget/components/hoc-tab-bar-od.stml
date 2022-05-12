@@ -1,6 +1,6 @@
 <template>
 	<view class="tab-bar">
-		<view class="tab-item" v-for="(item,index) in this.props.list" :key="index">
+		<view class="tab-item" v-for="(item,index) in this.props.tabList" :key="index">
 			<image class="tab-icon" :src="item.icon" />
 			<text class="tab-text">{{ item.msg}}</text>
 		</view>
@@ -8,7 +8,7 @@
 </template>
 <script>
 export default {
-	name: 'tab-bar',
+	name: 'hoc-tab-bar-od',
 	props: {
 		list: {
 			type: Array,

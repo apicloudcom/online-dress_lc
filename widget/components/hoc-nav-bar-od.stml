@@ -3,14 +3,15 @@
 		<view class="nav-bar">
 			<view onclick="closeWin" class="nav-bar-back" v-if="isBack">
 				<image class="nav-bar-icon" src="http://ae8b3ee28597856d3283.qiniucdn.apicloud-system.com/apicloud/6958c7448f8d7106d3ee273fa7430063.png" />
-				<text>返回</text>
+				<text class="nav-bar-text">返回</text>
 			</view>
-			<text>{{ msg }}</text>
+			<text class="nav-bar-text">{{ msg }}</text>
 		</view>
 	</safe-area>
 </template>
 <script>
 export default {
+	name: "hoc-nav-bar-od",
 	props: {
 		msg: {
 			type: String,
@@ -57,7 +58,7 @@ export default {
 	width: 15px;
 	height: 15px;
 }
-text {
+.nav-bar-text {
 	font-size: 18px;
 	color: #333;
 }

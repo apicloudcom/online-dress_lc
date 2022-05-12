@@ -15,7 +15,6 @@
 					</view>
 					<view class="sl-card_pbox">
 						<text class="sl-card_price">{'¥'+item.price}</text>
-						<view class="sl-flex1"></view>
 						<view class="sl-card_num">
 							<text class={'sl-card_btn'+(item.buynum==1?' card_btn_disable':'')}
 								data-index={index}>-</text>
@@ -53,9 +52,9 @@ export default {
 					  "key": "S",
 					  "buynum": 1,
 					  "id": "6117fcc80-d2f4-11ea-a0bc-bd616acc739c",
-					  "title": "2020夏新款韩版连衣裙女收腰显瘦显高A字裙气质法式",
+					  "title": "港风套装女复古chic减龄短袖 ins复古穿搭",
 					  "image":
-						"http://aea8bc2ccdd582de43c1.qiniucdn.apicloud-system.com/apicloud/05a8c2eda3a3e7f24b809d37064a702b.jpg",
+						"http://ae8b3ee28597856d3283.qiniucdn.apicloud-system.com/apicloud/3ee90482ef5b13bdbd9e9dc3f79f495e.png",
 					  "price": 1299,
 					  "isjia": 0
 					},
@@ -63,9 +62,9 @@ export default {
 					  "key": "M",
 					  "buynum": 3,
 					  "id": "27b5c380-d2f7-11ea-a0bc-bd616ac2c739c",
-					  "title": "夏新款套装女洋气时尚短裤阔腿裤两件套小个子夏装搭配显高",
+					  "title": "休闲时尚套装女夏裤子洋气可盐可甜",
 					  "image":
-						"http://aea8bc2ccdd582de43c1.qiniucdn.apicloud-system.com/apicloud/46e4b8d7a4a8d1febeec082516a8e8f5.png",
+						"http://ae8b3ee28597856d3283.qiniucdn.apicloud-system.com/apicloud/1cc4b3d74953e9426e83e6e0bb3e5afd.png",
 					  "price": 629,
 					  "isjia": 1
 					},
@@ -73,9 +72,9 @@ export default {
 					  "key": "S",
 					  "buynum": 6,
 					  "id": "9d739ce0-d2fd-11ea-a0bc-bd616acc739c",
-					  "title": "莫代尔无袖吊带连衣裙春秋侧开叉长裙女夏季内搭修身显瘦打底裙子",
+					  "title": "碎花连衣裙两件套装女",
 					  "image":
-						"http://aea8bc2ccdd582de43c1.qiniucdn.apicloud-system.com/apicloud/af44dcca9cde25d42f56f3047bfe0249.png",
+						"http://ae8b3ee28597856d3283.qiniucdn.apicloud-system.com/apicloud/2c8bbe302662ca7261a3f43a0a725d43.png",
 					  "price": 699,
 					  "isjia": 1
 					}
@@ -96,19 +95,21 @@ export default {
 <style scoped>
 .shopping-list {
 	flex: 1;
+	width: 100%;
 }
 /* list */
 .sl-list_box {
-	padding: 0 15px;
 	background-color: white;
 	border-radius: 4px;
-	margin: 10px 15px;
+	padding: 10px 15px;
 }
 .sl-card_one {
+	display: flex;
 	flex-direction: row;
 	height: 120px;
 	padding: 15px 0;
 	border-bottom: 1px solid #f8f8f8;
+	justify-content: space-between;
 }
 .sl-card_img {
 	width: 90px;
@@ -118,6 +119,7 @@ export default {
 	justify-content: center;
 	width: 35px;
 	height: 68px;
+	margin-right: 13px;
 }
 .sl-chk_img {
 	width: 20px;
@@ -125,17 +127,15 @@ export default {
 }
 .sl-card_details {
 	flex: 1;
-	margin-left: 15px;
+	margin-left: 13px;
+	width: 183px;
 }
 .sl-card_title {
 	font-size: 15px;
 	color: #333333;
-	height: 18px;
+	line-height: 18px;
 	overflow: hidden;
 	text-overflow: ellipsis;
-	display: -webkit-box;
-	-webkit-line-clamp: 1;
-	-webkit-box-orient: vertical;
 }
 .sl-card_tips {
 	flex-direction: row;
@@ -159,8 +159,10 @@ export default {
 	color: #999999;
 }
 .sl-card_pbox {
+	display: flex;
 	flex-direction: row;
 	align-items: center;
+	justify-content: space-between;
 	margin-top: 18px;
 }
 .sl-card_price {

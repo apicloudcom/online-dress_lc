@@ -3,7 +3,7 @@
 		<view class="right_box">
 			<view @click="onItemClick" class="right_item" style={'width:'+itemWidth+'px;height:'+(itemWidth+40)+'px;'}
 				v-for="(item,index) in list" data-id={item.id} data-name={item.name}>
-				<image class="right_item_img" style={'height:'+itemWidth+'px;'} src={item.icon}></image>
+				<image class="right_item_img" src={item.icon}></image>
 				<text class="right_item_zi color_12">{item.name}</text>
 			</view>
 		</view>
@@ -28,28 +28,38 @@ export default {
 			list:this.props.list || [
 					{
 					  "id": "258389c0-d532-11ea-9b7c-8f1336202828",
-					  "name": "拼接",
-					  "icon": "http://aea8bc2ccdd582de43c1.qiniucdn.apicloud-system.com/apicloud/e97719cccadec54316651e1f9448d822.png"
+					  "name": "连衣裙",
+					  "icon": "http://ae8b3ee28597856d3283.qiniucdn.apicloud-system.com/apicloud/51a76d00c46bdc90fa0138601cdb2060.png"
 					},
 					{
 					  "id": "11cca860-d2ff-11ea-a0bc-bd616acc739c",
-					  "name": "纽扣",
-					  "icon": "http://aea8bc2ccdd582de43c1.qiniucdn.apicloud-system.com/apicloud/814e4300a24e866e414d0463478d45f8.png"
+					  "name": "针织裙",
+					  "icon": "http://ae8b3ee28597856d3283.qiniucdn.apicloud-system.com/apicloud/bf017f44d8396a43d0c3a5faaba647dd.png"
 					},
 					{
 					  "id": "07bbe7f0-d2ff-11ea-a0bc-bd616acc739c",
-					  "name": "系带",
-					  "icon": "http://aea8bc2ccdd582de43c1.qiniucdn.apicloud-system.com/apicloud/5e2416a4f651a814f3f7ac3ea2b91f5a.png"
+					  "name": "T连衣裙",
+					  "icon": "http://ae8b3ee28597856d3283.qiniucdn.apicloud-system.com/apicloud/c88d14de583f85ef069dd0b1e065bd92.png"
 					},
 					{
 					  "id": "f97b6080-d2fe-11ea-a0bc-bd616acc739c",
-					  "name": "拉链",
-					  "icon": "http://aea8bc2ccdd582de43c1.qiniucdn.apicloud-system.com/apicloud/17ee821cd6da02caf05c96ee001888d1.png"
+					  "name": "裤子",
+					  "icon": "http://ae8b3ee28597856d3283.qiniucdn.apicloud-system.com/apicloud/19efd0fa529705147316dd696e860ff7.png"
 					},
 					{
 					  "id": "42990ef0-ccb7-11ea-8ee1-07d7d7fa197c",
-					  "name": "荷叶边",
-					  "icon": "http://aea8bc2ccdd582de43c1.qiniucdn.apicloud-system.com/apicloud/c78dce71fde2cdba0dade8845b6bcb4a.png"
+					  "name": "吊带裙",
+					  "icon": "http://ae8b3ee28597856d3283.qiniucdn.apicloud-system.com/apicloud/de8a2625b3adafabe55bfe1a7ec2b386.png"
+					},
+					{
+					  "id": "42990ef0-ccb7-11ea-8ee1-07d7d7fa197c",
+					  "name": "长裙",
+					  "icon": "http://ae8b3ee28597856d3283.qiniucdn.apicloud-system.com/apicloud/e240fc0c356abfb2a44d358521881c30.png"
+					},
+					{
+					  "id": "42990ef0-ccb7-11ea-8ee1-07d7d7fa197c",
+					  "name": "短裙",
+					  "icon": "http://ae8b3ee28597856d3283.qiniucdn.apicloud-system.com/apicloud/3ce4698626fce034b2e9aebc33ee0065.png"
 					}
 				  ]
 		}
@@ -75,6 +85,7 @@ export default {
 }
 
 .right_box {
+	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
 	margin: 15px;
@@ -85,15 +96,17 @@ export default {
 
 .right_item {
 	margin-right: 15px;
+	width: 70px;
+	height: 70px;
 }
 
 .right_item_img {
-	width: 100%;
+	width: 70px;
+	height: 70px;
 	background-color: #f6f6f6;
 }
 
 .right_item_zi {
-	height: 40px;
 	line-height: 40px;
 	text-align: center;
 	color: #8f8f8f;

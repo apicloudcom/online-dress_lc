@@ -45,7 +45,7 @@ export default {
 .-my-swiper-swiper,
 .-my-swiper-img {
 	width: 100%;
-	height: 100%;
+	height: 330px;
 }
 .-my-swiper-indicator-text {
 	position: absolute;

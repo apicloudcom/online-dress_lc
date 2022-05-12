@@ -30,23 +30,19 @@ export default {
 			list:this.props.list || [
 					{
 					  "id": "1",
-					  "name": "连衣裙"
+					  "name": "女装"
 					},
 					{
 					  "id": "2",
-					  "name": "衬衫"
+					  "name": "男装"
 					},
 					{
 					  "id": "1ff38f90-caf7-11ea-8523-0da8a6a49497",
-					  "name": "半身裙"
+					  "name": "运动装"
 					},
 					{
 					  "id": "418835c0-caf7-11ea-8523-0da8a6a49497",
-					  "name": "吊带裙"
-					},
-					{
-					  "id": "25b7b7a0-ccb7-11ea-8ee1-07d7d7fa197c",
-					  "name": "鞋帽"
+					  "name": "婴儿服饰"
 					}
 				  ],
 				  active:this.props.active || 1

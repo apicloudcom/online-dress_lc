@@ -26,7 +26,7 @@ export default {
 	},
 	data() {
 		return {
-			data:this.props.data || {
+			data:this.props.orderBuy || {
 					"orderBuynum": 1,
 					"payPrice": 666
 				}
