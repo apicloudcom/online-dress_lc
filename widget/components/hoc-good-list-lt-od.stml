@@ -171,7 +171,7 @@ export default {
 .-list-item-title {
 	line-height: 22px;
 	height: 44px;
-	font-size: 12px;
+	font-size: 14px;
 	color: #333333;
 	font-weight: bold;
 	text-overflow: ellipsis;
@@ -187,13 +187,13 @@ export default {
 	align-items: center;
 }
 .-list-item-price {
-	font-size: 12px;
+	font-size: 14px;
 	line-height: 19px;
 	font-weight: 500;
 	color: #fe5c00;
 }
 .-list-item-delprice {
-	font-size: 12px;
+	font-size: 14px;
 	text-decoration: line-through;
 	margin-left: 8px;
 	color: #8f8f8f;
