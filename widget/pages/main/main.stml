@@ -30,7 +30,7 @@ export default {
             // 轮播图
             bannerList: [
 				{
-					"icon": "http://ae8b3ee28597856d3283.qiniucdn.apicloud-system.com/apicloud/ef81be13b16f35582989acaf361bcde2.png"
+					"icon": "http://ae8b3ee28597856d3283.qiniucdn.apicloud-system.com/apicloud/3794f574251ab98366a921c0913b3cdc.png"
 				},
 				{
 					"icon": "http://aea8bc2ccdd582de43c1.qiniucdn.apicloud-system.com/apicloud/74f3bc9acdac7fc7554869f7011848df.png"

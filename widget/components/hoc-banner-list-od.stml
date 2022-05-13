@@ -29,7 +29,7 @@ export default {
 			current: 0,
 			list: this.props.list || [
 				{
-					"icon": "http://ae8b3ee28597856d3283.qiniucdn.apicloud-system.com/apicloud/ef81be13b16f35582989acaf361bcde2.png"
+					"icon": "http://ae8b3ee28597856d3283.qiniucdn.apicloud-system.com/apicloud/3794f574251ab98366a921c0913b3cdc.png"
 				},
 				{
 					"icon": "http://aea8bc2ccdd582de43c1.qiniucdn.apicloud-system.com/apicloud/74f3bc9acdac7fc7554869f7011848df.png"
@@ -57,7 +57,7 @@ export default {
 /* banner */
 .banner_box {
 	width: 100%;
-	height: 230px;
+	height: 200px;
 	padding: 10px 0;
 	background-color: #fff;
 }
@@ -67,7 +67,7 @@ export default {
 }
 .banner_img {
 	width: 100%;
-	height: 200px;
+	height: 180px;
 	border-radius: 6px;
 }
 .banner_dots {
