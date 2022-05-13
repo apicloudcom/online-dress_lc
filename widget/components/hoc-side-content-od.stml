@@ -1,8 +1,7 @@
 <template>
 	<scroll-view class="scroll_right" scroll-y>
 		<view class="right_box">
-			<view @click="onItemClick" class="right_item" style={'width:'+itemWidth+'px;height:'+(itemWidth+40)+'px;'}
-				v-for="(item,index) in list" data-id={item.id} data-name={item.name}>
+			<view @click="onItemClick" class="right_item" v-for="(item,index) in list" data-id={item.id} data-name={item.name}>
 				<image class="right_item_img" src={item.icon}></image>
 				<text class="right_item_zi color_12">{item.name}</text>
 			</view>
@@ -96,13 +95,14 @@ export default {
 
 .right_item {
 	margin-right: 15px;
-	width: 70px;
-	height: 70px;
+	margin-bottom: 15px;
+	width: 65px;
+	height: auto;
 }
 
 .right_item_img {
-	width: 70px;
-	height: 70px;
+	width: 65px;
+	height: 65px;
 	background-color: #f6f6f6;
 }
 
