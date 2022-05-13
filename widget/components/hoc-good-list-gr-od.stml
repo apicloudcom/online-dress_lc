@@ -158,21 +158,22 @@ export default {
 	width: 100%;
 }
 .-grid-item-title {
+	font-size: 12px;
 	line-height: 20px;
 	height: 40px;
 	margin: 5px 12px 0;
 	color: #333333;
 	font-weight: bold;
 	text-overflow: ellipsis;
-	white-space: normal;
+	white-space: nowrap;
 	overflow: hidden;
 	-webkit-line-clamp: 2;
 }
 .-grid-item-price {
 	margin-left: 12px;
-	height: 35px;
-	line-height: 35px;
+	line-height: 12px;
 	font-weight: 500;
 	color: #fe5c00;
+	font-size: 12px;
 }
 </style>
